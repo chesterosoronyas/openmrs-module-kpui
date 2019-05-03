@@ -15,7 +15,7 @@
 
 <div id="${ id }" class="${ cssClass }">
 	<% if (config.icon && config.iconProvider) { %>
-		${ ui.includeFragment("kenyaui", "widget/icon", [ iconProvider: config.iconProvider, icon: config.icon, iconOverlay: config.iconOverlay, iconOverlayProvider: config.iconOverlayProvider ]) }
+		${ ui.includeFragment("kpui", "widget/icon", [ iconProvider: config.iconProvider, icon: config.icon, iconOverlay: config.iconOverlay, iconOverlayProvider: config.iconOverlayProvider ]) }
 	<% } %>
 	<div class="ke-button-text">
 	<% if (config.label) { %>

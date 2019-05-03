@@ -1,4 +1,4 @@
-${ ui.includeFragment("kenyaui", "widget/search", config.mergeAttributes([ searchType: "location" ])) }
+${ ui.includeFragment("kpui", "widget/search", config.mergeAttributes([ searchType: "location" ])) }
 
 <span id="${ config.id }-error" class="error" style="display: none"></span>
 <% if (config.parentFormId) { %>

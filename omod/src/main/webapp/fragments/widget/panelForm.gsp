@@ -94,11 +94,11 @@
 		}
 		else if (it.class || (it.object && it.property)) {
 			fragment = "widget/field"
-			fragmentProvider = "kenyaui"
+			fragmentProvider = "kpui"
 		}
 		else if (it.value && !it.hiddenInputName) {
 			fragment = "widget/field"
-			fragmentProvider = "kenyaui"
+			fragmentProvider = "kpui"
 		}
 
 		if (fragment) {
@@ -126,13 +126,13 @@
 <div class="ke-panel-controls">
 	<% if (config.submitLabel) { %>
 	<button type="submit" form="${ id }">
-		<img src="${ ui.resourceLink("kenyaui", "images/glyphs/ok.png") }" /> ${ config.submitLabel }
+		<img src="${ ui.resourceLink("kpui", "images/glyphs/ok.png") }" /> ${ config.submitLabel }
 	</button>
 	<% } %>
 
 	<% if (config.cancelLabel) { %>
 	<button type="button" onclick="publish('${ id }.reset'); ${ config.cancelFunction }()">
-		<img src="${ ui.resourceLink("kenyaui", "images/glyphs/cancel.png") }" /> ${ config.cancelLabel }
+		<img src="${ ui.resourceLink("kpui", "images/glyphs/cancel.png") }" /> ${ config.cancelLabel }
 	</button>
 	<% } %>
 </div>

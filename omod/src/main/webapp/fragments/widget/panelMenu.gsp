@@ -9,7 +9,7 @@
 	<% } %>
 	<div>
 	<% for (def itemConfig : config.items) { %>
-		${ ui.includeFragment("kenyaui", "widget/panelMenuItem", itemConfig) }
+		${ ui.includeFragment("kpui", "widget/panelMenuItem", itemConfig) }
 	<% } %>
 	</div>
 </div>

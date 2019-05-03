@@ -3,14 +3,14 @@
 
 	<parent>
 		<groupId>org.openmrs.module</groupId>
-		<artifactId>kenyaui</artifactId>
+		<artifactId>kpui</artifactId>
 		<version>2.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>kenyaui-api</artifactId>
+	<artifactId>kpui-api</artifactId>
 	<packaging>jar</packaging>
-	<name>KenyaUI Library API</name>
-	<description>API project for KenyaUI Library</description>
+	<name>KPUI Library API</name>
+	<description>API project for KPUI Library</description>
 
 	<build>
 		<resources>

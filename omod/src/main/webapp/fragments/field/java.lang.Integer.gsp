@@ -1,11 +1,11 @@
 <%
-	def onblur = "kenyaui.clearFieldErrors('" + config.id + "');"
+	def onblur = "kpui.clearFieldErrors('" + config.id + "');"
 
 	if (config.required) {
-		onblur += " kenyaui.validateRequiredField('" + config.id + "');"
+		onblur += " kpui.validateRequiredField('" + config.id + "');"
 	}
 
-	onblur += " kenyaui.validateIntegerField('" + config.id + "');"
+	onblur += " kpui.validateIntegerField('" + config.id + "');"
 %>
 <input id="${ config.id }" type="text" size="5" name="${ config.formFieldName }" value="${ config.initialValue ?: "" }" onblur="${ onblur }"/>
 

@@ -1,4 +1,4 @@
-<%= ui.includeFragment("kenyaui", "widget/selectList", [
+<%= ui.includeFragment("kpui", "widget/selectList", [
 		id: config.id,
         selected: [ config.initialValue?.role ],
         formFieldName: config.formFieldName,

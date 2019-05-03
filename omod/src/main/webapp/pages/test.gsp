@@ -1,5 +1,5 @@
 <%
-	ui.decorateWith("kenyaui", "standardPage")
+	ui.decorateWith("kpui", "standardPage")
 
 	def defaultOnClick = "defaultOnClick();"
 %>
@@ -39,20 +39,20 @@
 
 <h3>dataPoint</h3>
 <div class="holder">
-	${ ui.includeFragment("kenyaui", "widget/dataPoint", [ label: "Date value with interval", value: new Date(), showDateInterval: true ]) }
-	${ ui.includeFragment("kenyaui", "widget/dataPoint", [ label: "Regular value with extra date", value: "Value", extra: new Date() ]) }
-	${ ui.includeFragment("kenyaui", "widget/dataPoint", [ label: "Collections of values", value: [ "abc", 123, new Date() ] ]) }
-	${ ui.includeFragment("kenyaui", "widget/dataPoint", [ label: "Value is a link", value: new org.openmrs.ui.framework.Link("Google", "http://google.com", null) ]) }
+	${ ui.includeFragment("kpui", "widget/dataPoint", [ label: "Date value with interval", value: new Date(), showDateInterval: true ]) }
+	${ ui.includeFragment("kpui", "widget/dataPoint", [ label: "Regular value with extra date", value: "Value", extra: new Date() ]) }
+	${ ui.includeFragment("kpui", "widget/dataPoint", [ label: "Collections of values", value: [ "abc", 123, new Date() ] ]) }
+	${ ui.includeFragment("kpui", "widget/dataPoint", [ label: "Value is a link", value: new org.openmrs.ui.framework.Link("Google", "http://google.com", null) ]) }
 </div>
 
 <h3>panelMenu</h3>
 <div class="holder" style="width: 400px">
-	${ ui.includeFragment("kenyaui", "widget/panelMenu", [
+	${ ui.includeFragment("kpui", "widget/panelMenu", [
 			heading: "Header",
 			items: [
-					[ iconProvider: "kenyaui", icon: "buttons/users_manage.png", label: "Menu Item #1 (active)", active: true, href: ui.pageLink("kenyaui", "test") ],
-					[ iconProvider: "kenyaui", label: "Menu Item #2 (no icon)", onClick: defaultOnClick ],
-					[ iconProvider: "kenyaui", icon: "buttons/admin_setup.png", label: "Menu Item #3 (extra text)", extra: "Extra text", href: ui.pageLink("kenyaui", "test") ]
+					[ iconProvider: "kpui", icon: "buttons/users_manage.png", label: "Menu Item #1 (active)", active: true, href: ui.pageLink("kpui", "test") ],
+					[ iconProvider: "kpui", label: "Menu Item #2 (no icon)", onClick: defaultOnClick ],
+					[ iconProvider: "kpui", icon: "buttons/admin_setup.png", label: "Menu Item #3 (extra text)", extra: "Extra text", href: ui.pageLink("kpui", "test") ]
 			]
 	]) }
 </div>
@@ -90,16 +90,16 @@
 
 <h3>java.util.Date</h3>
 <div class="holder">
-	Date only ${ ui.includeFragment("kenyaui", "field/java.util.Date", [ initialValue: new Date() ]) }<br />
-	Date and time ${ ui.includeFragment("kenyaui", "field/java.util.Date", [ initialValue: new Date(), showTime: true ]) }
+	Date only ${ ui.includeFragment("kpui", "field/java.util.Date", [ initialValue: new Date() ]) }<br />
+	Date and time ${ ui.includeFragment("kpui", "field/java.util.Date", [ initialValue: new Date(), showTime: true ]) }
 </div>
 
 <h2>Decorators</h2>
 
 <h3>panel</h3>
 <div class="holder">
-	${ ui.decorate("kenyaui", "panel", [ heading: "Simple Panel" ], """Panel content""") }
-	${ ui.decorate("kenyaui", "panel", [ heading: "Panel with footer", frameOnly: true ],
+	${ ui.decorate("kpui", "panel", [ heading: "Simple Panel" ], """Panel content""") }
+	${ ui.decorate("kpui", "panel", [ heading: "Panel with footer", frameOnly: true ],
 			"""<div class="ke-panel-content">Panel content</div><div class="ke-panel-footer">Panel footer</div>""") }
 </div>
 
@@ -124,11 +124,11 @@
 <div class="holder">
 	<button type="button">button</button>
 	<button type="button" disabled="disabled">disabled</button>
-	<button type="button"><img src="${ ui.resourceLink("kenyaui", "images/glyphs/view.png") }" /> button with glyph</button>
-	<button type="button"><img src="${ ui.resourceLink("kenyaui", "images/buttons/undo.png") }" /> button with icon</button>
-	<button type="button" class="ke-compact"><img src="${ ui.resourceLink("kenyaui", "images/glyphs/edit.png") }" /> compact</button>
-	<button type="button" class="ke-compact"><img src="${ ui.resourceLink("kenyaui", "images/glyphs/edit.png") }" /></button>
-	<button type="button" class="ke-app"><img src="${ ui.resourceLink("kenyaui", "images/apps/admin.png") }" />app</button>
+	<button type="button"><img src="${ ui.resourceLink("kpui", "images/glyphs/view.png") }" /> button with glyph</button>
+	<button type="button"><img src="${ ui.resourceLink("kpui", "images/buttons/undo.png") }" /> button with icon</button>
+	<button type="button" class="ke-compact"><img src="${ ui.resourceLink("kpui", "images/glyphs/edit.png") }" /> compact</button>
+	<button type="button" class="ke-compact"><img src="${ ui.resourceLink("kpui", "images/glyphs/edit.png") }" /></button>
+	<button type="button" class="ke-app"><img src="${ ui.resourceLink("kpui", "images/apps/admin.png") }" />app</button>
 </div>
 
 <h2>Classes</h2>
@@ -175,10 +175,10 @@
 	</div>
 	<div class="ke-stack-item">
 		<button type="button" class="ke-compact" onclick="defaultOnClick()">
-			<img src="${ ui.resourceLink("kenyaui", "images/glyphs/edit.png") }" />
+			<img src="${ ui.resourceLink("kpui", "images/glyphs/edit.png") }" />
 		</button>
 		<button type="button" class="ke-compact" onclick="defaultOnClick()">
-			<img src="${ ui.resourceLink("kenyaui", "images/glyphs/void.png") }" />
+			<img src="${ ui.resourceLink("kpui", "images/glyphs/void.png") }" />
 		</button>
 		Stack item #3 with buttons
 	</div>
@@ -224,7 +224,7 @@
 		<div class="ke-panel-content">
 			Content from an existing template
 			<br/>
-			${ ui.includeFragment("kenyaui", "field/java.util.Date", [ initialValue: new Date() ]) }
+			${ ui.includeFragment("kpui", "field/java.util.Date", [ initialValue: new Date() ]) }
 		</div>
 		<div class="ke-panel-controls">
 			<button type="button" onclick="kenyaui.closeDialog()">Close</button>
@@ -261,7 +261,7 @@
 <h3>apps</h3>
 <div class="holder">
 	<% [ "admin", "chart", "clinician", "default", "developer", "directory", "intake", "registration", "reports" ].each { name -> %>
-	<img src="${ ui.resourceLink("kenyaui", "images/apps/" + name + ".png") }" title="${ name }" />
+	<img src="${ ui.resourceLink("kpui", "images/apps/" + name + ".png") }" title="${ name }" />
 	<% } %>
 </div>
 
@@ -282,14 +282,14 @@
 			"user_disable", "user_enable", "user_f", "user_m", "users_manage",
 			"validation", "visit_end", "visit_retrospective", "visit_void"
 	].each { name -> %>
-	<img src="${ ui.resourceLink("kenyaui", "images/buttons/" + name + ".png") }" title="${ name }" />
+	<img src="${ ui.resourceLink("kpui", "images/buttons/" + name + ".png") }" title="${ name }" />
 	<% } %>
 </div>
 
 <h3>forms</h3>
 <div class="holder">
 	<% [ "generic", "completion", "family_history", "labresults", "moh257", "obstetric" ].each { name -> %>
-	<img src="${ ui.resourceLink("kenyaui", "images/forms/" + name + ".png") }" title="${ name }" />
+	<img src="${ ui.resourceLink("kpui", "images/forms/" + name + ".png") }" title="${ name }" />
 	<% } %>
 </div>
 
@@ -299,7 +299,7 @@
 			"add", "cancel", "checkout", "close", "csv", "disable", "discontinue", "edit", "email", "enable", "enroll", "excel", "login",
 			"monitor", "ok", "patient_f", "patient_m", "person_f", "person_m", "phone", "start", "switch", "trash", "view", "void"
 	].each { name -> %>
-	<img src="${ ui.resourceLink("kenyaui", "images/glyphs/" + name + ".png") }" title="${ name }" />
+	<img src="${ ui.resourceLink("kpui", "images/glyphs/" + name + ".png") }" title="${ name }" />
 	<% } %>
 </div>
 
@@ -307,7 +307,7 @@
 <div class="holder">
 	<div class="ke-toolbar">
 	<% [ "home", "help" ].each { name -> %>
-	<img src="${ ui.resourceLink("kenyaui", "images/toolbar/" + name + ".png") }" title="${ name }" />
+	<img src="${ ui.resourceLink("kpui", "images/toolbar/" + name + ".png") }" title="${ name }" />
 	<% } %>
 	</div>
 </div>

@@ -10,7 +10,7 @@
 		searchParams.put("answerTo", answerTo instanceof org.openmrs.Concept ? answerTo.id : answerTo)
 	}
 %>
-${ ui.includeFragment("kenyaui", "widget/search", config.mergeAttributes([ searchType: "concept", searchParams: searchParams ])) }
+${ ui.includeFragment("kpui", "widget/search", config.mergeAttributes([ searchType: "concept", searchParams: searchParams ])) }
 
 <span id="${ config.id }-error" class="error" style="display: none"></span>
 <% if (config.parentFormId) { %>

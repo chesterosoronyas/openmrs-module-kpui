@@ -4,7 +4,7 @@
 // supports config.type = textarea, config.type=password, config.rows, config.cols
 %>
 <% if (config?.config?.options) { %>
-    ${ ui.includeFragment("kenyaui", "widget/selectList", [
+    ${ ui.includeFragment("kpui", "widget/selectList", [
             id: config.id,
             formFieldName: config.formFieldName,
             options: config.config.options,

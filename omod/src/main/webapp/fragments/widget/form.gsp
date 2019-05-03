@@ -96,11 +96,11 @@
 	}
 	else if (it.class || (it.object && it.property)) {
         fragment = "widget/field"
-		fragmentProvider = "kenyaui"
+		fragmentProvider = "kpui"
 	}
     else if (it.value && !it.hiddenInputName) {
     	fragment = "widget/field"
-		fragmentProvider = "kenyaui"
+		fragmentProvider = "kpui"
 	}
 
 	if (fragment) {

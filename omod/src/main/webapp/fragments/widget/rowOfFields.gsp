@@ -9,7 +9,7 @@
 		<% } else if (it.hiddenInputName) { %>
 			<input type="hidden" name="${ it.hiddenInputName }" value="${ ui.convert(it.value, java.lang.String) }"/>
 		<% } else { %>
-			<td valign="top"><%= ui.includeFragment("kenyaui", "widget/labeledField", it) %></td>
+			<td valign="top"><%= ui.includeFragment("kpui", "widget/labeledField", it) %></td>
 		<% } %>
 	<% } %>
 	</tr>

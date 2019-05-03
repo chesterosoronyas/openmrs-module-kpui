@@ -13,7 +13,7 @@
 
 <div class="${ styles.join(" ") }" onclick="${ onClick }">
 	<% if (config.icon && config.iconProvider) { %>
-		${ ui.includeFragment("kenyaui", "widget/icon", [ iconProvider: config.iconProvider, icon: config.icon ]) }
+		${ ui.includeFragment("kpui", "widget/icon", [ iconProvider: config.iconProvider, icon: config.icon ]) }
 	<% } %>
 
 	<span class="ke-label" <% if (!config.extra) { %>style="margin-top: 7px"<% } %> >${ config.label }</span>

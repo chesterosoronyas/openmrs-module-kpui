@@ -9,11 +9,11 @@
 	def iconOverlay, iconOverlayProvider
 
 	if (config.useEditOverlay) {
-		iconOverlayProvider = "kenyaui"
+		iconOverlayProvider = "kpui"
 		iconOverlay = "buttons/_overlay_edit.png"
 	}
 	else if (config.useViewOverlay) {
-		iconOverlayProvider = "kenyaui"
+		iconOverlayProvider = "kpui"
 		iconOverlay = "buttons/_overlay_view.png"
 	}
 	else {

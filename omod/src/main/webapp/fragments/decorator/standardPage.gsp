@@ -1,21 +1,21 @@
 <%
 	// Oddly resource ordering values are highest-first
-	ui.includeJavascript("kenyaui", "underscore.js", 101)
-	ui.includeJavascript("kenyaui", "jquery.js", 100)
-	ui.includeJavascript("kenyaui", "select2.js", 99)
-	ui.includeJavascript("kenyaui", "jquery-ui.js", 98)
-	ui.includeJavascript("kenyaui", "angular.js", 97)
-	ui.includeJavascript("kenyaui", "jquery.toastmessage.js", 96)
-	ui.includeJavascript("kenyaui", "pagebus/simple/pagebus.js", 95)
-	ui.includeJavascript("kenyaui", "ui.js", 94)
-	ui.includeJavascript("kenyaui", "kenyaui.js", 93)
-	ui.includeJavascript("kenyaui", "kenyaui-tabs.js", 92)
-	ui.includeJavascript("kenyaui", "kenyaui-legacy.js", 92)
+	ui.includeJavascript("kpui", "underscore.js", 101)
+	ui.includeJavascript("kpui", "jquery.js", 100)
+	ui.includeJavascript("kpui", "select2.js", 99)
+	ui.includeJavascript("kpui", "jquery-ui.js", 98)
+	ui.includeJavascript("kpui", "angular.js", 97)
+	ui.includeJavascript("kpui", "jquery.toastmessage.js", 96)
+	ui.includeJavascript("kpui", "pagebus/simple/pagebus.js", 95)
+	ui.includeJavascript("kpui", "ui.js", 94)
+	ui.includeJavascript("kpui", "kpui.js", 93)
+	ui.includeJavascript("kpui", "kpui-tabs.js", 92)
+	ui.includeJavascript("kpui", "kpui-legacy.js", 92)
 
-	ui.includeCss("kenyaui", "select2.css", 100)
-	ui.includeCss("kenyaui", "jquery-ui.css", 99)
-	ui.includeCss("kenyaui", "toastmessage/css/jquery.toastmessage.css", 98)
-	ui.includeCss("kenyaui", "kenyaui.css", 97)
+	ui.includeCss("kpui", "select2.css", 100)
+	ui.includeCss("kpui", "jquery-ui.css", 99)
+	ui.includeCss("kpui", "toastmessage/css/jquery.toastmessage.css", 98)
+	ui.includeCss("kpui", "kpui.css", 97)
 %>
 <!DOCTYPE html>
 <html>
@@ -32,7 +32,7 @@
 			var OPENMRS_CONTEXT_PATH = '${ contextPath }';
 		</script>
 
-		${ ui.includeFragment("kenyaui", "notifications") }
+		${ ui.includeFragment("kpui", "notifications") }
 
 		<% if (config.beforeContent) { %>
 			${ config.beforeContent }

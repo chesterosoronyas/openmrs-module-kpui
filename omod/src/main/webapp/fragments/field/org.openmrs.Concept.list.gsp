@@ -13,7 +13,7 @@
 	}
 %>
 
-<%= ui.includeFragment("kenyaui", "widget/selectList", [
+<%= ui.includeFragment("kpui", "widget/selectList", [
 		id: config.id,
 		selected: [ config?.initialValue?.id ],
 		formFieldName: config.formFieldName,
